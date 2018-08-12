@@ -1,0 +1,35 @@
+<section class="content-header">
+    <h1>
+        Todos os Cubs
+    </h1>
+</section>
+
+
+<section class="content">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Projeto</th>
+                <th scope="col">Padrao</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Mes</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Ano</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cub of cubs" class="col-sm-6 col-xs-12">
+                <td>{{cub.projeto}}</td>
+                <td>{{cub.padrao}}</td>
+                <td>{{cub.tipo}}</td>
+                <td>{{cub.valor}}</td>
+                <td>{{cub.estado}}</td>
+                <td>{{cub.mes}}</td>
+                <td>{{cub.ano}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
